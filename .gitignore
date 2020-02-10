@@ -1,0 +1,14 @@
+.*
+!.github
+!.editorconfig
+!.eslintignore
+!.eslintrc
+!.gitignore
+!.gitattributes
+!.npmignore
+!.solhint.json
+bak/
+build/
+node_modules/
+*.log
+test.js

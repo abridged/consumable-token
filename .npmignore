@@ -1,0 +1,14 @@
+.*
+!.npmignore
+bak/
+build/
+migrations/
+node_modules/
+scripts/
+shared/
+test/
+/*.js
+/*.ts
+/*.log
+/tsconfig.json
+!/index.*

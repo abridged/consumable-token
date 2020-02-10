@@ -1,0 +1,16 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "no-empty-blocks": "off",
+    "no-complex-fallback": "off",
+    "not-rely-on-time": "off",
+    "no-inline-assembly": "off",
+    "avoid-call-value": "off",
+    "avoid-low-level-calls": "off",
+    "mark-callable-contracts": "off"
+  }
+}

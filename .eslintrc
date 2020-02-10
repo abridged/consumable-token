@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "artifacts": true,
+    "contract": true,
+    "web3": false
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 160
+      }
+    ],
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-await-in-loop": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}

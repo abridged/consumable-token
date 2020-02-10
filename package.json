@@ -1,0 +1,54 @@
+{
+  "name": "consumable-token",
+  "version": "0.0.1",
+  "description": "Consumable token",
+  "author": {
+    "name": "Stanislaw Glogowski",
+    "email": "hello@newobject.pl"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abridged/consumable-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abridged/consumable-token/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint-js": "eslint .",
+    "lint-sol": "solhint contracts/**/*.sol",
+    "lint": "npm run lint-js & npm run lint-sol",
+    "compile": "truffle compile",
+    "migrate-main": "truffle migrate --network local",
+    "migrate-ropsten": "truffle migrate --network ropsten",
+    "migrate-rinkeby": "truffle migrate --network rinkeby",
+    "migrate-goerli": "truffle migrate --network goerli",
+    "migrate-kovan": "truffle migrate --network kovan",
+    "migrate-local": "truffle migrate --network local",
+    "dist": "truffle run dist",
+    "test": "./scripts/test.sh --network test"
+  },
+  "dependencies": {
+    "@abridged/contracts": "2.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "1.0.25",
+    "@types/bn.js": "4.11.5",
+    "@types/mocha": "5.2.7",
+    "@types/node": "12.12.7",
+    "@types/web3": "1.2.2",
+    "bn.js": "4.11.8",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "expect": "24.9.0",
+    "ganache-cli": "6.8.1-beta.0",
+    "rimraf": "3.0.0",
+    "solhint": "2.3.0",
+    "truffle": "5.1.0",
+    "truffle-plugin-dist": "0.1.0",
+    "web3": "1.2.4"
+  }
+}
