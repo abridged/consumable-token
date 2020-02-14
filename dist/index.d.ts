@@ -1,4 +1,4 @@
-// updated at: 2020-02-10T12:18:33.371Z
+// updated at: 2020-02-14T17:50:44.475Z
 
 export declare enum ContractNames {
   ConsumableToken = 'ConsumableToken',

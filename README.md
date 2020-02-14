@@ -46,9 +46,10 @@ import {ConsumableToken} from "consumable-token/contracts/token/ConsumableToken.
 
 ## Deployed
 
-| network | address |
-| --- | --- |
-| Görli | `0x7A5A7e870e14A42f19A70560a21852C2B8f34082` |
+| network id | network name | contract address |
+| --- | --- | --- |
+| `5` | Görli | `0x7A5A7e870e14A42f19A70560a21852C2B8f34082` |
+| `42` | Kovan | `0xB2a6bB692E1902434aa8a434dEed4708E70A6dEC` |
 
 ## License
 

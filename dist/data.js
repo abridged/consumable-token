@@ -1,4 +1,4 @@
-// updated at: 2020-02-10T12:18:33.371Z
+// updated at: 2020-02-14T17:50:44.475Z
 
 /* eslint-disable */
 
@@ -447,7 +447,7 @@ module.exports = {
       "3": null,
       "4": null,
       "5": "0x7A5A7e870e14A42f19A70560a21852C2B8f34082",
-      "42": null,
+      "42": "0xB2a6bB692E1902434aa8a434dEed4708E70A6dEC",
       "4660": "0x7A5A7e870e14A42f19A70560a21852C2B8f34082"
     },
     "byteCodeHash": null
