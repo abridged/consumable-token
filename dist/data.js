@@ -1,4 +1,4 @@
-// updated at: 2020-02-14T17:50:44.475Z
+// updated at: 2020-03-27T12:35:23.460Z
 
 /* eslint-disable */
 
@@ -443,12 +443,9 @@ module.exports = {
       }
     ],
     "addresses": {
-      "1": null,
-      "3": null,
-      "4": null,
-      "5": "0x7A5A7e870e14A42f19A70560a21852C2B8f34082",
-      "42": "0xB2a6bB692E1902434aa8a434dEed4708E70A6dEC",
-      "4660": "0x7A5A7e870e14A42f19A70560a21852C2B8f34082"
+      "5": "0x43dE08Bae314B031f9dD333920d2a43b6d229B3E",
+      "42": "0xc2E22B8e4BCE4b89EF5Ac5C648A39e1a2eA59181",
+      "4660": "0xc2E22B8e4BCE4b89EF5Ac5C648A39e1a2eA59181"
     },
     "byteCodeHash": null
   }

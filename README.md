@@ -25,6 +25,10 @@ console.log(
   getContractAddress(ContractNames.ConsumableToken),
 );
 console.log(
+  'ConsumableToken kovan address:',
+  getContractAddress(ContractNames.ConsumableToken, '42'),
+);
+console.log(
   'ConsumableToken goerli address:',
   getContractAddress(ContractNames.ConsumableToken, 5),
 );
@@ -37,7 +41,7 @@ console.log(
 ### Solidity
 
 ```Solidity
-pragma solidity ^0.5.13;
+pragma solidity ^0.5.12;
 
 import {ConsumableToken} from "consumable-token/contracts/token/ConsumableToken.sol";
 
@@ -48,8 +52,9 @@ import {ConsumableToken} from "consumable-token/contracts/token/ConsumableToken.
 
 | network id | network name | contract address |
 | --- | --- | --- |
-| `5` | Görli | `0x7A5A7e870e14A42f19A70560a21852C2B8f34082` |
-| `42` | Kovan | `0xB2a6bB692E1902434aa8a434dEed4708E70A6dEC` |
+| `5` | Görli | `0x43dE08Bae314B031f9dD333920d2a43b6d229B3E` |
+| `42` | Kovan | `0xc2E22B8e4BCE4b89EF5Ac5C648A39e1a2eA59181` |
+| `42` | Local | `0xc2E22B8e4BCE4b89EF5Ac5C648A39e1a2eA59181` |
 
 ## License
 

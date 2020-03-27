@@ -1,6 +1,5 @@
-const HDWalletProvider = require('@truffle/hdwallet-provider');
-const { providerMnemonic, providerEndpoint, infuraProjectId } = require('./config');
-const { NETWORK_IDS, INFURA_ENDPOINTS } = require('./constants');
+const { NETWORK_IDS } = require('./constants');
+const { createProvider } = require('./provider');
 
 module.exports = {
   networks: {
@@ -13,19 +12,7 @@ module.exports = {
       .reduce((result, name) => ({
         ...result,
         [name]: {
-          provider: () => {
-            if (!providerMnemonic) {
-              throw new Error('Please setup PROVIDER_MNEMONIC env variable');
-            }
-            return new HDWalletProvider(
-              providerMnemonic,
-              INFURA_ENDPOINTS[name] && infuraProjectId
-                ? `${INFURA_ENDPOINTS[name]}${infuraProjectId}`
-                : providerEndpoint,
-              0,
-              10,
-            );
-          },
+          provider: () => createProvider(name),
           network_id: NETWORK_IDS[name],
           gas: 6000000,
         },
@@ -33,7 +20,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: '0.5.13',
+      version: '0.5.12',
       settings: {
         optimizer: {
           enabled: true,

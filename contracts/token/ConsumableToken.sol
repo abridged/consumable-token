@@ -1,4 +1,4 @@
-pragma solidity ^0.5.13;
+pragma solidity 0.5.12;
 
 import {MathLib} from "@abridged/contracts/contracts/utils/MathLib.sol";
 import {AddressLib} from "@abridged/contracts/contracts/utils/AddressLib.sol";
